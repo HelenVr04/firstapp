@@ -1,0 +1,29 @@
+.menu {
+    background-color: #44024d;
+    padding: 20px;
+    display: flex; /* Hace que el contenedor del menú sea un contenedor flex */
+    justify-content: flex-end;
+  }
+  
+  .menuList {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Hace que los elementos de la lista se muestren en línea (horizontalmente) */
+  }
+  
+  .menuItem {
+    margin-right: 10px; /* Añade un espacio entre cada elemento del menú */
+  }
+  
+  .menuLink {
+    text-decoration:white;
+    text-shadow: #0c0202;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  .menuLink:hover {
+    background-color: rgb(121, 6, 136);
+  }
+  
+  

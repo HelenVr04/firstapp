@@ -1,16 +1,22 @@
+import Link from 'next/link';
 
-import styles from "@/styles/index.module.css"
-const Navigation = () =>{
-    return (
-      <div>
-       <nav className="absolute top-5 right-0 z-10">
-       <a href="./" className="text-white hover:text-pink-500 px-4 py-2 border-r border-white">PRINCIPAL</a>
-      <a href="./home" className="text-white hover:text-pink-500 px-4 py-2 border-r border-white">HOME</a>
-      <a href="./acerca" className="text-white hover:text-pink-500 px-4 py-2 border-r border-white">ACERCA DE</a>
-      <a href="./contacto" className="text-white hover:text-pink-500 px-4 py-2">CONTACTO</a>
-      </nav>
-      </div>
-    );
+const Navigation = () => {
+  return (
+    <div className="bg-purple-900 p-3 flex justify-end">
+      <Link href="/" passHref>
+        <div className="text-white mr-4 cursor-pointer transition duration-300 ease-in-out hover:bg-purple-700 hover:rounded-lg p-2">PRINCIPAL</div>
+      </Link>
+      <Link href="/home" passHref>
+        <div className="text-white mr-4 cursor-pointer transition duration-300 ease-in-out hover:bg-purple-700 hover:rounded-lg p-2">HOME</div>
+      </Link>
+      <Link href="/acerca" passHref>
+        <div className="text-white mr-4 cursor-pointer transition duration-300 ease-in-out hover:bg-purple-700 hover:rounded-lg p-2">ACERCA DE</div>
+      </Link>
+      <Link href="/contacto" passHref>
+        <div className="text-white cursor-pointer transition duration-300 ease-in-out hover:bg-purple-700 hover:rounded-lg p-2">CONTACTO</div>
+      </Link>
+    </div>
+  );
 }
 
-export default Navigation
+export default Navigation;
